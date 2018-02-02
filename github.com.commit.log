@@ -1,0 +1,56 @@
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning>git clone https://github.com/fernandorolim/elementary-trainning-angular-js-w3schools.git
+Cloning into 'elementary-trainning-angular-js-w3schools'...
+warning: You appear to have cloned an empty repository.
+
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning>cd elementary-trainning-angular-js-w3schools
+
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning\elementary-trainning-angular-js-w3schools>
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning\elementary-trainning-angular-js-w3schools>
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning\elementary-trainning-angular-js-w3schools>git add --all
+
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning\elementary-trainning-angular-js-w3schools>git commit -am "First commit for 'AngularJS W3Schools'"
+[master (root-commit) 98f370b] First commit for 'AngularJS W3Schools'
+ 26 files changed, 341 insertions(+)
+ create mode 100644 .project
+ create mode 100644 .settings/.jsdtscope
+ create mode 100644 .settings/org.eclipse.wst.common.component
+ create mode 100644 .settings/org.eclipse.wst.common.project.facet.core.xml
+ create mode 100644 .settings/org.eclipse.wst.jsdt.ui.superType.container
+ create mode 100644 .settings/org.eclipse.wst.jsdt.ui.superType.name
+ create mode 100644 WebContent/ang_001_example.html
+ create mode 100644 WebContent/ang_002_ng_bind.html
+ create mode 100644 WebContent/ang_003_ng_init.html
+ create mode 100644 WebContent/ang_004_sum.html
+ create mode 100644 WebContent/ang_005_first_last_name.html
+ create mode 100644 WebContent/ang_006_background_color.html
+ create mode 100644 WebContent/ang_007_numbers.html
+ create mode 100644 WebContent/ang_008_strings.html
+ create mode 100644 WebContent/ang_009_person.html
+ create mode 100644 WebContent/ang_010_arrays.html
+ create mode 100644 WebContent/ang_011_adding_controller_again.html
+ create mode 100644 WebContent/ang_012_adding_directives.html
+ create mode 100644 WebContent/ang_013_scripts_in_files.html
+ create mode 100644 WebContent/ang_014_directives.html
+ create mode 100644 WebContent/ang_015_data_binding.html
+ create mode 100644 WebContent/ang_016_repeating_elements.html
+ create mode 100644 WebContent/ang_017_minimal.html
+ create mode 100644 WebContent/ang_017_repeating_with_attributes.html
+ create mode 100644 WebContent/js/myApp.js
+ create mode 100644 WebContent/js/myCtrl.js
+
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning\elementary-trainning-angular-js-w3schools>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No error
+
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning\elementary-trainning-angular-js-w3schools>
+
+C:\Dev\workspaces-eclipse\cedesbr671\for-trainning\elementary-trainning-angular-js-w3schools>git push
+Counting objects: 31, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (31/31), 5.62 KiB | 639.00 KiB/s, done.
+Total 31 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/fernandorolim/elementary-trainning-angular-js-w3schools.git
+ * [new branch]      master -> master
