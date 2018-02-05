@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body>
+
+	 <div ng-app="myApp" ng-controller="myCtrl">
+	 	<input ng-model="firstname">
+	 	<h1>{{firstname}}</h1>
+	 </div>
+	 
+	 <script>
+	 	var app = angular.module("myApp", []);
+	 	app.controller("myCtrl", function($scope) {
+	 		$scope.firstname = "Fernando";
+	 		$scope.lastname  = "Rolim"; 
+	 	});
+	 </script>
+
+	 <p>NG-MODEL SERÁ ÚTIL PARA COMBINAR COM CONTROLES HTML (INPUT, SELECT, TEXTAREA, ETC.).</p> 
+
+</body>
+</html>

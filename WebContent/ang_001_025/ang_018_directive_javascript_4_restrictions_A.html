@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body ng-app="myApp">
+
+	<!-- PARA VER ESTE, COMENTE O PRIMEIRO 'restrict: A' -->
+	<w3-test-directive-ignored-because-restrict-A></w3-test-directive-ignored-because-restrict-A>
+	
+	<!-- PARA VER ESTE, COMENTE O SEGUNDO  'restrict: A' -->
+	<w3-test-directive></w3-test-directive>
+	
+	<div w3-test-directive></div>
+	
+	<script>
+		var app = angular.module("myApp", []);
+		app.directive("w3TestDirectiveIgnoredBecauseRestrictA", function() {
+			return {
+				restrict: "A", // comentar isto para ver ambos
+				template: "<h1>Made by a directive (Ignored because restrict A)!</h1>" 
+			};
+		});	
+		app.directive("w3TestDirective", function() {
+			return {
+				restrict: "A", // comentar isso verá dois resultados um para <w3-test-directive, outro para 'div class'. 
+				template: "<h1>Made by a directive (restrict A)!</h1>" 
+			};
+		});
+	</script>
+	
+	<p><strong>NOTA:</strong>PARA COMPARAR RESULTADOS DIFERENTES, COMENTE 'restrict: A'.</p>
+
+</body>
+</html>
+
+<!-- --------------------------------------------------------------- 
+	FIRST TRYING I USED: 
+	template: "<h1>Made by a directive!</h1>"; 
+	But the last ";" is enough to suck the entirely application. 
+	FRS, February 05th 2018.
+---------------------------------------------------------------- --> 

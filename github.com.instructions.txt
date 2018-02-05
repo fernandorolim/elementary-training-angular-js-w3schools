@@ -1,0 +1,10 @@
+
+##### STEP 01: clone the remote repository ##################################################################################
+
+git clone https://github.com/fernandorolim/elementary-trainning-angular-js-w3schools.git
+
+##### STEP 02: add file recursively #########################################################################################
+
+git add --all
+git commit -am "First commit for 'AngularJS W3Schools'"
+git push (it will ask for credentials)
