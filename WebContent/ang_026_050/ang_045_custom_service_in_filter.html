@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body>
+
+	<div ng-app="myApp">
+		Convert the number 255, using a custom made service inside a custom made filter: 
+		<h1>{{ 255 | meuFormatoEmHexa }}</h1>
+	</div>
+	
+	<script>
+		var app = angular.module("myApp", []);
+		app.service("hexafy", function() {
+			this.meuFormatoEmHexa = function(x) {
+				return x.toString(16); 
+			}
+		}); 
+		app.filter("meuFormatoEmHexa", ["hexafy", function(hexafy) {
+			return function(x) {
+				return hexafy.meuFormatoEmHexa(x); 
+			}; 
+		}]);
+	</script>
+
+</body>
+</html>
+
+<!-- 
+	AO INVÉS DE USAR [], AGORA TEMOS UMA KEY-VALUE COM CHAVE DA FUNÇÃO E A 
+	PRÓPRIA FUNÇÃO IMPLEMENTADA. 
+	FRS, FEBRUARY 7TH 2018. 
+ --> 
