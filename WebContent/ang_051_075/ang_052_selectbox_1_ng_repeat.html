@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<select ng-model="selectedName">
+			<option ng-repeat="x in names">{{x}}</option>
+		</select>
+	</div>
+	
+	<script>
+		var app = angular.module("myApp", []);
+		app.controller("myCtrl", function($scope) {
+			$scope.names = ["Emil", "Tobias", "Linus"];
+		});
+	</script>
+
+	<p>
+		<br/>1. DROPDOWNS ng-options: SELECTED VALUE --> OBJECT
+		<br/>2. DROPDOWNS ng-repeat : SELECTED VALUE --> STRING ALWAYS
+	</p>
+
+</body>
+</html>
